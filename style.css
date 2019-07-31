@@ -1,0 +1,63 @@
+body
+{
+	color: #00ff40;
+	font-family: monospace;
+	font-size: 1em;
+	margin: 2rem;
+	background-color: #080808;
+}
+
+h1
+{
+	font-size: 3rem;
+	margin: 0 0 1rem 0;
+}
+
+h2
+{
+	font-size: 2rem;
+	margin: 0 0 1rem 0;
+}
+
+body > div
+{
+	border-radius: 0.5rem;
+	border: 0.2rem solid #804000;
+	margin-bottom: 1rem;
+	padding: 2rem;
+	background-color: #000000;
+}
+
+select, input[type="text"], button
+{
+	background-color: #000000;
+	border: 0.2rem solid #804000;
+	padding: 0.5rem;
+	color: #00ff40;
+	font-family: monospace;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+button
+{
+	margin-bottom: 4rem;
+}
+
+button:hover
+{
+	background-color: #804000;
+	cursor: pointer;
+}
+
+button:active
+{
+	background-color: #c08000;
+	border-color: #c08000;
+}
+
+.output
+{
+	font-size: 1.5rem;
+	min-height: 7rem;
+}

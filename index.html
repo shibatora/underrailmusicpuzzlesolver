@@ -5,6 +5,7 @@
 	<title>Underrail Music Puzzle Solver</title>
 	<meta name="author" content="Shibatora">
 	<meta name="created on" content="2019-07-31">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>Underrail Expedition Music Puzzle Solver</h1>
@@ -81,10 +82,8 @@
 		<label for="ump-nl4">Line 4</label>
 		<input type="text" name="ump-nl4" id="ump-nl4">
 	</div>
-	<div>
-		<input type="button" value="Solve" onclick="ump()">
-	</div>
-	<div>
+	<button onclick="ump()">Solve</button>
+	<div class="output">
 		<div id="output1"></div>
 		<div id="output2"></div>
 		<div id="output3"></div>
