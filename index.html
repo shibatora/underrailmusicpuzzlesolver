@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underrail Music Puzzle Solver</title>
+	<meta name="author" content="Shibatora">
+	<meta name="created on" content="2019-07-31">
+</head>
+<body>
+	<h1>Underrail Expedition Music Puzzle Solver</h1>
+	<div>
+		<h2>Interval Keys</h2>
+		<label for="ump-ik1">Interval Key 1</label>
+		<select name="ump-ik1" id="ump-ik1">
+			<option value="0">perfect unison</option>
+			<option value="1">minor second</option>
+			<option value="2">major second</option>
+			<option value="3">minor third</option>
+			<option value="4">major third</option>
+			<option value="5">perfect fourth</option>
+			<option value="6">diminished fifth / augmented fourth</option>
+			<option value="7">perfect fifth</option>
+			<option value="8">minor sixth</option>
+			<option value="9">major sixth</option>
+			<option value="10">minor seventh</option>
+			<option value="11">major seventh</option>
+			<option value="12">perfect octave</option>
+		</select>
+		<label for="ump-ik2">Interval Key 2</label>
+		<select name="ump-ik2" id="ump-ik2">
+			<option value="0">perfect unison</option>
+			<option value="1">minor second</option>
+			<option value="2">major second</option>
+			<option value="3">minor third</option>
+			<option value="4">major third</option>
+			<option value="5">perfect fourth</option>
+			<option value="6">diminished fifth / augmented fourth</option>
+			<option value="7">perfect fifth</option>
+			<option value="8">minor sixth</option>
+			<option value="9">major sixth</option>
+			<option value="10">minor seventh</option>
+			<option value="11">major seventh</option>
+			<option value="12">perfect octave</option>
+		</select>
+		<label for="ump-ik3">Interval Key 3</label>
+		<select name="ump-ik3" id="ump-ik3">
+			<option value="0">perfect unison</option>
+			<option value="1">minor second</option>
+			<option value="2">major second</option>
+			<option value="3">minor third</option>
+			<option value="4">major third</option>
+			<option value="5">perfect fourth</option>
+			<option value="6">diminished fifth / augmented fourth</option>
+			<option value="7">perfect fifth</option>
+			<option value="8">minor sixth</option>
+			<option value="9">major sixth</option>
+			<option value="10">minor seventh</option>
+			<option value="11">major seventh</option>
+			<option value="12">perfect octave</option>
+		</select>
+	</div>
+	<div>
+		<h2>Octave Keys</h2>
+		<label for="ump-ok1">Octave Key 1</label>
+		<input type="text" name="ump-ok1" id="ump-ok1">
+		<label for="ump-ok2">Octave Key 2</label>
+		<input type="text" name="ump-ok2" id="ump-ok2">
+		<label for="ump-ok3">Octave Key 3</label>
+		<input type="text" name="ump-ok3" id="ump-ok3">
+		<label for="ump-ok4">Octave Key 4</label>
+		<input type="text" name="ump-ok4" id="ump-ok4">
+	</div>
+	<div>
+		<h2>Notes</h2>
+		<label for="ump-nl1">Line 1</label>
+		<input type="text" name="ump-nl1" id="ump-nl1">
+		<label for="ump-nl2">Line 2</label>
+		<input type="text" name="ump-nl2" id="ump-nl2">
+		<label for="ump-nl3">Line 3</label>
+		<input type="text" name="ump-nl3" id="ump-nl3">
+		<label for="ump-nl4">Line 4</label>
+		<input type="text" name="ump-nl4" id="ump-nl4">
+	</div>
+	<div>
+		<input type="button" value="Solve" onclick="ump()">
+	</div>
+	<div>
+		<div id="output1"></div>
+		<div id="output2"></div>
+		<div id="output3"></div>
+		<div id="output4"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
