@@ -26,22 +26,44 @@ body > div
 	margin-bottom: 1rem;
 	padding: 2rem;
 	background-color: #000000;
+	width: 62%;
 }
 
 select, input[type="text"], button
 {
-	background-color: #000000;
+	background-color: #201000;
 	border: 0.2rem solid #804000;
 	padding: 0.5rem;
 	color: #00ff40;
 	font-family: monospace;
 	border-radius: 0.5rem;
 	font-size: 1rem;
+	display: block;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button
+{
+	width: 10%;
+}
+
+select:not(:last-child), input[type="text"]:not(:last-child)
+{
+	margin-bottom: 1rem;
+}
+
+label
+{
+	margin-bottom: 0.5rem;
+	display: block;
 }
 
 button
 {
 	margin-bottom: 4rem;
+	font-weight: bold;
 }
 
 button:hover
