@@ -40,6 +40,11 @@ class Cipher
 		this.notes			= notes;
 		this.intervals		= [];
 		this.indices		= [];
+
+		for (var i = 0; i < 10; i++)
+		{
+			this.indices.push({Index: i, Interval: null});
+		}
 	}
 
 	decrypt()
@@ -125,10 +130,25 @@ class Cipher
 
 	setIntervalIndices()
 	{
-		for (var i = 0; i < 3; i++) {
-			this.indices.push({Index: parseInt(this.octaveKeys[0][i]), Interval: i});
-			this.indices.push({Index: parseInt(this.octaveKeys[0][i])+1, Interval: i});
+		for (var i = 0; i < 3; i++)
+		{
+			this.indices.find(x => x.Index == parseInt(this.octaveKeys[0][i])).Interval = i;
 		}
+
+		this.indices.forEach((x, i) =>
+		{
+			if (x.Interval == null)
+			{
+				if (i == 0)
+				{
+					x.Interval = this.indices[9].Interval;
+				}
+				else
+				{
+					x.Interval = this.indices[i-1].Interval;
+				}
+			}
+		});
 	}
 
 	getCipher()
