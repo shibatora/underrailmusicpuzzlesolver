@@ -37,7 +37,7 @@ class Cipher
 	{
 		this.intervalKeys	= intervalKeys;
 		this.octaveKeys		= octaveKeys;
-		this.notes			= notes;
+		this.notes		= notes;
 		this.intervals		= [];
 		this.indices		= [];
 
@@ -62,7 +62,7 @@ class Cipher
 
 		let i1 = piano.slice(this.intervalKeys[0]).concat(piano.slice(0, this.intervalKeys[0]));
 		let i2 = i1.slice(this.intervalKeys[1]).concat(i1.slice(0, this.intervalKeys[1]));
-		let i3 = i2.slice(this.intervalKeys[2]).concat(i2.slice(0, this.intervalKeys[2]));
+		let i3 = i1.slice(this.intervalKeys[2]).concat(i1.slice(0, this.intervalKeys[2]));
 
 		i1.forEach((e, i) =>
 		{
